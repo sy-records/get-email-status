@@ -29,6 +29,11 @@ $stringData = $actual_time .' '. $ip . ' ' . $browser ."\r\n";
 fwrite($fh, $stringData);
 fclose($fh);
 
+// Mysql
+$conn = new mysqli("127.0.0.1","root","root","test", 3306);
+$sql = sprintf("INSERT INTO `email_status` (`ip`, `created_time`, `browser`) VALUES ('%s', '%s', '%s')", $ip, $actual_time, $browser);
+$res = $conn->query($sql);
+
 // Generate Image (Es. dimesion is 1x1)
 $newimage = ImageCreate(1, 1);
 $grigio = ImageColorAllocate($newimage, 255, 255, 255);
