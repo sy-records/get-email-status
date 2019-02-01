@@ -9,7 +9,7 @@
 在你的邮件中加入如下代码，前提是你的邮件需要支持`html`格式内容
 
 ```html
-<img src="http://yourdomian.com/img.php" style="display:none;">
+<img src="http://yourdomain.com/img.php" style="display:none;">
 ```
 
 ## 作用
@@ -19,6 +19,7 @@
 * 浏览器类型
 * 写日志
 * 写数据库
+* 更多功能等你增加...
 
 如果你需要统计到具体的人，也可以增加参数，然后进行获取
 
